@@ -21,7 +21,7 @@ Ces trois modèles peuvent être repris et adaptés en fonction du contexte de v
 
 Les modèles présentés ci-dessous vous sont proposés pour conduire un audit d'accessibilité d'un site ou d'une application web, ou cadrer le travail d'auditeurs tiers :
 
-* une grille d'évaluation RGAA 3 (ODS, 402 ko) utilisable par des techniciens en vue de réaliser l'audit d'un site web ;
+* une [grille d'évaluation RGAA 3 (ODS, 402 ko)](https://github.com/DISIC/rgaa_modeles_documents/blob/master/rgaa3.0.grille-de-test-full.ods?raw=true) utilisable par des techniciens en vue de réaliser l'audit d'un site web ;
 * un modèle de rapport d'audit proposant une trame pour la restitution des résultats :
-  * modèle de rapport d'audit éditable (ODT, 66,8) ;
-  * modèle de rapport d'audit pour consultation (PDF, 184 ko).
+  * [modèle de rapport d'audit éditable (ODT, 66,8)](https://github.com/DISIC/rgaa_modeles_documents/blob/master/rgaa3.0-rapportdaudit.odt?raw=true) ;
+  * [modèle de rapport d'audit pour consultation (PDF, 184 ko)](https://github.com/DISIC/rgaa_modeles_documents/blob/master/rgaa3.0-rapportdaudit.pdf?raw=true).
