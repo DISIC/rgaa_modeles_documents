@@ -12,12 +12,19 @@
 
 		<main>
 			<div class="note">
-				<p>Note : Dans cette page, vous trouverez des notices d’utilisation de composants riches basés sur WAI-ARIA. Recopiez les notices qui vous sont nécessaires dans la page <a href="aide.html">Aide</a> de votre site, à la section concernée.</p>
+				<p>Note&nbsp;: Dans cette page, vous trouverez des notices d’utilisation de composants riches basés sur WAI-ARIA. Recopiez les notices qui vous sont nécessaires dans la page <a href="aide.html">Aide</a> de votre site, à la section concernée.</p>
+				<p>Pour entendre les informations telles qu'elles sont restituées dans cette page d'aide, il est nécessaire de s'assurer du paramétrage suivant pour les différents lecteurs d'écran&nbsp;:</p> 
+					<ul>
+						<li>Avec NVDA, lorsqu'on arrive sur un composant, entrer en mode application avec <kbd>NVDA</kbd> + <kbd>Espace</kbd>.</li>
+						<li>Avec <span lang="en">Jaws</span>, s'assurer que le mode formulaire est activé en appuyant sur <kbd>Entrée</kbd>.</li>
+						<li><span lang="en">VoiceOver</span> utilise ses propres modes de déplacement avec les combinaisons de touches <kbd>VO+flèches de direction</kbd>. Afin d'utiliser les raccourcis décrits dans cette page, s'assurer que le mode de navigation rapide est désactivé (se reporter à la documentation de VoiceOver pour plus de détails).</li>
+					</ul>
+				<p>Si NVDA ou Jaws ne sont pas en mode application ou formulaire, certaines informations décrites ci-dessous pourraient ne pas être vocalisées correctement.</p>
 				<p>La documentation ci-dessous repose sur des tests effectués sur les configurations suivantes&nbsp;:</p>
 				<ul>
-					<li>NVDA 2015.1 / Firefox 37</li>
-					<li><span lang="en">Jaws</span> 15 / Internet Explorer 11</li>
-					<li>Safari  / VoiceOver sur MacOS Yosemite</li>
+					<li>NVDA 2016.2.1 / Firefox 48</li>
+					<li><span lang="en">Jaws</span> 16 / Internet Explorer 11</li>
+					<li>Safari  / VoiceOver sur OSX El Capitan</li>
 				</ul>
 			</div>
 
@@ -26,17 +33,17 @@
 				<p>Un système d’onglets est une liste de panneaux activables via des liens (onglets) qui vont afficher des contenus. Un seul panneau peut être visible à la fois : quand un onglet est activé, les autres ne sont pas visibles.<p>
 				<p>Une fois que le contenu est rendu visible, la touche <kbd>TAB</kbd> vous permet d'atteindre le contenu du panneau sélectionné.</p>
 				<ul>
-					<li>Lorsque vous arrivez sur un système d’onglets, vous êtes placés sur le titre du premier onglet (par défaut, c'est le premier onglet du système qui est apparent) ; </li>
+					<li>Lorsque vous arrivez sur un système d’onglets, vous êtes placés sur le titre du premier onglet (par défaut, c'est le premier onglet du système qui est apparent)&nbsp;; </li>
 					<li>Si vous utilisez un lecteur d’écran :
 						<ul>
-							<li>NVDA annonce <i>onglet, [nom], onglet sélectionné 1 sur X »</i>, où « X » est le nombre total d’onglets ; </li>
-							<li><span lang="en">Jaws</span> annonce <i>« onglet [nom]  1 sur X »</i> ;</li>
-							<li><span lang="en">VoiceOver</span> annonce <i>« Panneau 1, sélectionné tabulation 1 sur X »</i>, où « X » est le nombre total d’onglets.</li>
+							<li>NVDA annonce <i>onglet, [nom], onglet sélectionné 1 sur X »</i>, où « X » est le nombre total d’onglets&nbsp;; </li>
+							<li><span lang="en">Jaws</span> annonce <i>« onglet [nom] sélectionné »</i>&nbsp;;</li>
+							<li><span lang="en">VoiceOver</span> annonce <i>« Panneau 1, sélectionné 1 sur X »</i>, où « X » est le nombre total d’onglets.</li>
 						</ul>
 					</li>
-					<li>Les flèches <kbd>DROITE</kbd> et <kbd>GAUCHE</kbd> vous permettent de naviguer d’un titre d’onglet à l’autre, activant leurs contenus associés ; </li>
-					<li>La touche <kbd>TAB</kbd> vous permet d'atteindre le panneau affiché ou l'un de ses composants ; </li>
-					<li>À ce moment, vous pouvez parcourir le contenu de l’onglet actif, la touche <kbd>TAB</kbd> vous permet d’atteindre les éléments interactifs du contenu ; </li>
+					<li>Les flèches <kbd>DROITE</kbd> et <kbd>GAUCHE</kbd> vous permettent de naviguer d’un titre d’onglet à l’autre, activant leurs contenus associés&nbsp;; </li>
+					<li>La touche <kbd>TAB</kbd> vous permet d'atteindre le panneau affiché ou l'un de ses composants&nbsp;; </li>
+					<li>À ce moment, vous pouvez parcourir le contenu de l’onglet actif, la touche <kbd>TAB</kbd> vous permet d’atteindre les éléments interactifs du contenu&nbsp;; </li>
 					<li>Pour parcourir la liste des titres d’onglets à nouveau, tabuler en arrière jusqu’à ce que le focus se place sur le titre de l’onglet actif.</li>
 					<li>Autres interactions au clavier (à ne documenter que si elles sont implémentées)&nbsp;:
 						<ul>
@@ -53,15 +60,23 @@
 				<h2>Potentiomètre</h2>
 				<p>Un potentiomètre est un curseur que vous pouvez faire varier entre un point minimal et un point maximal, afin de déterminer une valeur.</p>
 				<ul>
-					<li>Si vous utilisez un lecteur d’écran, lorsque vous atteignez le potentiomètre :
+					<li>Si vous utilisez un lecteur d’écran, lorsque vous atteignez le potentiomètre&nbsp;:
 						<ul>
-							<li>NVDA annonce « <i>[Nom], potentiomètre, [valeur]</i> » ;</li>
-							<li><span lang="en">Jaws</span> annonce « <i>[Nom], potentiomètre horizontal, [valeur]</i> » ; </li>
-							<li><span lang="en">VoiceOver</span> annonce « <i>[Valeur], [nom], curseur</i> ».</li>
+							<li>NVDA annonce « <i>[Nom], potentiomètre, [valeur]</i> »&nbsp;;</li>
+							<li><span lang="en">Jaws</span> annonce « <i>[Nom], potentiomètre horizontal, [valeur]</i>. La version 16 n'annonce plus la valeur lorsqu'on la modifie. Ce problème est réparé dans la version 17 de ce lecteur d'écran. »&nbsp;; </li>
+							<li><span lang="en">VoiceOver</span> annonce « <i>[Valeur], [nom], curseur</i> ». Interagir avec ce composant en appuyant sur les touches <kbd>VO+majuscule+flèche bas</kbd>. Pour utiliser les flèches de contrôle du curseur, ne pas oublier de désactiver la navigation rapide.</li>
 						</ul>
 					</li>
-					<li>Les flèches <kbd>HAUT</kbd> et <kbd>DROIT</kbd> vous permettent d’augmenter la valeur du potentiomètre ;</li>
+					<li>Les flèches <kbd>HAUT</kbd> et <kbd>DROIT</kbd> vous permettent d’augmenter la valeur du potentiomètre&nbsp;;</li>
 					<li>Les flèches <kbd>BAS</kbd> et <kbd>GAUCHE</kbd> vous permettent de diminuer la valeur du potentiomètre.</li>
+					<li>Autres interactions au clavier (à ne documenter que si elles sont implémentées)&nbsp;:
+						<ul>
+							<li><kbd>DÉBUT</kbd> met la valeur à son minimum&nbsp;;</li>
+							<li><kbd>FIN</kbd> met la valeur à son maximum&nbsp;;</li>
+							<li><kbd>ALT + PAGE SUIVANTE</kbd>, augmente rapidement la valeur&nbsp;;</li>
+							<li><kbd>ALT + PAGE PRÉCÉDENTE</kbd>, diminue rapidement la valeur.</li>
+						</ul>
+					</li>
 				</ul>
 			</section>
 
@@ -69,23 +84,15 @@
 				<h2>Fenêtre modale</h2>
 				<p>Une fenêtre modale est un élément de la page qui vient se placer en surimpression du reste de la page, à la manière d’un message d’alerte. Ce n'est pas une nouvelle fenêtre ni un nouvel onglet. Une fenêtre modale est contenue dans la page en cours de consultation.</p>
 				<ul>
-					<li>Si vous utilisez un lecteur d’écran, lorsqu’une fenêtre modale s'ouvre :
+					<li>Si vous utilisez un lecteur d’écran, lorsqu’une fenêtre modale s'ouvre&nbsp;:
 						<ul>
-							<li>NVDA annonce « <i>[Nom] dialogue</i> » ;</li>
-							<li><span lang="en">Jaws</span> annonce « <i>Boite de dialogue [nom]</i> » ; </li>
+							<li>NVDA annonce « <i>[Nom] dialogue</i> »&nbsp;;</li>
+							<li><span lang="en">Jaws</span> annonce « <i>[nom] Boîte de dialogue</i> »&nbsp;; </li>
 							<li><span lang="en">VoiceOver</span> annonce « <i>[Nom] avec X éléments, dialogue</i> ».</li>
 						</ul>
 					</li>
-					<li>Une fois qu’une fenêtre modale est ouverte, la touche <kbd>TAB</kbd> vous permet d’atteindre tous les éléments de la fenêtre modale. La navigation est restreinte à cette fenêtre tant qu’elle est ouverte ; </li>
+					<li>Une fois qu’une fenêtre modale est ouverte, la touche <kbd>TAB</kbd> vous permet d’atteindre tous les éléments de la fenêtre modale. La navigation est restreinte à cette fenêtre tant qu’elle est ouverte&nbsp;; </li>
 					<li>Pour fermer la fenêtre, vous pouvez soit atteindre le bouton « Fermer », soit utiliser la touche <kbd>ESC</kbd>.</li>
-					<li>Autres interactions au clavier (à ne documenter que si elles sont implémentées)&nbsp;:
-						<ul>
-							<li><kbd>DÉBUT<kbd> met la valeur à son minimum&nbsp;;</li>
-							<li><kbd>FIN<kbd> met la valeur à son maximum&nbsp;;</li>
-							<li><kbd>ALT + PAGE SUIVANTE</kbd>, augmente rapidement la valeur&nbsp;;</li>
-							<li><kbd>ALT + PAGE PRÉCÉDENTE</kbd>, diminue rapidement la valeur.</li>
-						</ul>
-					</li>
 				</ul>
 			</section>
 
@@ -105,10 +112,10 @@
 				<p>Une fois que le contenu est rendu visible, la touche <kbd>TAB</kbd> vous permet d'atteindre le contenu du panneau sélectionné.</p>
 				<ul>
 					<li>Lorsque vous atteignez un accordéon ou un système d’accordéons, vous êtes placés sur le titre du premier accordéon.</li>
-					<li>Si vous utilisez un lecteur d’écran, lorsque vous atteignez un accordéon :
+					<li>Si vous utilisez un lecteur d’écran, lorsque vous atteignez un accordéon&nbsp;:
 						<ul>
-							<li>NVDA annonce « <i>Accordéon fenêtre</i> » ;</li>
-							<li><span lang="en">Jaws</span> annonce « <i>Panneau des onglets, onglet [nom], 1 sur x</i> » ; </li>
+							<li>NVDA annonce « <i>Panneau 1, onglet 1 sur x</i> »&nbsp;;</li>
+							<li><span lang="en">Jaws</span> annonce « <i>Panneau des onglets, onglet [nom], 1 sur x</i> »&nbsp;; </li>
 							<li><span lang="en">VoiceOver</span> annonce « <i>[Nom] avec X éléments, tableau d'onglet</i> ».</li>
 						</ul>
 					</li>
@@ -116,7 +123,7 @@
 					<li>Une fois que le contenu est rendu visible, la touche <kbd>TAB</kbd> vous permet d’atteindre les éléments interactifs du contenu.</li>
 					<li>Depuis un titre d’accordéon :
 						<ul>
-							<li>les touches <kbd>BAS</kbd> et <kbd>DROITE</kbd> vous permettent d’atteindre les titres suivants du système d’accordéons ;</li>
+							<li>les touches <kbd>BAS</kbd> et <kbd>DROITE</kbd> vous permettent d’atteindre les titres suivants du système d’accordéons&nbsp;;</li>
 							<li>les touches <kbd>HAUT</kbd> et <kbd>GAUCHE</kbd> vous permettent d’atteindre les titres précédents du système d’accordéons.</li>
 						</ul>
 					</li>
@@ -136,7 +143,7 @@
 				<h2>Menu</h2>
 				<p>Un menu est un système particulier de menu de navigation. Contrairement à l’utilisation habituelle de la touche tabulation dans les menus de navigation, un composant riche de type menu emploie une association des flèches de direction et de la touche <kbd>ENTRÉE</kbd>.</p>
 				<ul>
-					<li>Si vous utilisez un lecteur d’écran, lorsque vous atteignez un menu :
+					<li>Si vous utilisez un lecteur d’écran, lorsque vous atteignez un menu&nbsp;:
 						<ul>
 							<li>NVDA annonce « <i>[Nom] sous-menu 1 sur X</i> », où X est le nombre d'entrées du menu&nbsp;;</li>
 							<li><span lang="en">Jaws</span> annonce « <i>Barre de menu [nom]</i> »&nbsp;; </li>
@@ -144,18 +151,19 @@
 
 						</ul>
 					</li>
-					<li>La touche <kbd>DROITE</kbd> vous permet d’atteindre les entrées suivantes de premier niveau du menu ;</li>
-					<li>La touche <kbd>GAUCHE</kbd> vous permet d’atteindre les entrées précédentes de premier niveau du menu ;</li>
-					<li>Les touches <kbd>HAUT</kbd> et <kbd>BAS</kbd> vous permettent de déployer le sous-menu (s'il existe) et d’atteindre les entrées de ce sous-menu ;</li>
-					<li>La touche <kbd>ENTRÉE</kbd> vous permet d’atteindre directement la première entrée d’un sous-menu (s'il existe) ;</li>
+					<li>La touche <kbd>DROITE</kbd> vous permet d’atteindre les entrées suivantes de premier niveau du menu&nbsp;;</li>
+					<li>La touche <kbd>GAUCHE</kbd> vous permet d’atteindre les entrées précédentes de premier niveau du menu&nbsp;;</li>
+					<li>Les touches <kbd>HAUT</kbd> et <kbd>BAS</kbd> vous permettent de déployer le sous-menu (s'il existe) et d’atteindre les entrées de ce sous-menu&nbsp;;</li>
+					<li>La touche <kbd>ENTRÉE</kbd> vous permet d’atteindre directement la première entrée d’un sous-menu (s'il existe)&nbsp;;</li>
 					<li>La touche <kbd>ENTRÉE</kbd> vous permet d’activer les liens.</li>
-				</ul>
-				<li>Autres interactions au clavier (à ne documenter que si elles sont implémentées)&nbsp;:
+					<li>Autres interactions au clavier (à ne documenter que si elles sont implémentées)&nbsp;:
 					<ul>
-							<li><kbd>ESC</kbd> fermer le sous-menu affiché&nbsp;;</li>
+							<li><kbd>ESC</kbd> ferme le sous-menu affiché&nbsp;;</li>
 							<li><kbd>LETTRE</kbd>, active l'entrée de sous-menu qui commence par la lettre tapée&nbsp;;</li>
 						</ul>
 					</li>
+				</ul>
+				
 			</section>
 
 			<section id="tree" class="article">
@@ -164,13 +172,13 @@
 				<ul>
 					<li>Si vous utilisez un lecteur d’écran, lorsque vous atteignez une arborescence :
 						<ul>
-							<li>NVDA annonce « <i>Arborescence, [nom] réduit niveau 1</i> » ;</li>
+							<li>NVDA annonce « <i>Arborescence, [nom] réduit niveau 1</i> »&nbsp;;</li>
 							<li><span lang="en">Jaws</span> annonce « <i>Arborescence [nom] fermé sélectionné, 1 sur X</i> », où X est le nombre d'entrées de l'arborescence&nbsp;;</li>
-							<li><span lang="en">VoiceOver</span> annonce « <i>Taleau</i> ».</li>
+							<li><span lang="en">VoiceOver</span> annonce « <i>Tableau</i> ».</li>
 						</ul>
 					</li>
-					<li>Les touches de direction vous permettent de naviguer entre les entrées actives (déployées) ;</li>
-					<li>La touche <kbd>DROIT</kbd> vous permet de déployer les sous-sections (si elles existent) d’une entrée ; </li>
+					<li>Les touches de direction vous permettent de naviguer entre les entrées actives (déployées)&nbsp;;</li>
+					<li>La touche <kbd>DROIT</kbd> vous permet de déployer les sous-sections (si elles existent) d’une entrée&nbsp;; </li>
 					<li>La touche <kbd>GAUCHE</kbd> vous permet de replier les sous-sections d’une entrée.</li>
 				</ul>
 			</section>
@@ -181,23 +189,23 @@
 				<ul>
 					<li>Si vous utilisez un lecteur d’écran, lorsque vous atteignez un calendrier :
 						<ul>
-							<li>NVDA annonce « <i>[Nom] <span lang="en">datepicker</span></i> » ;</li>
-							<li><span lang="en">Jaws</span> annonce « <i>[Nom] date <span lang="en">picker</span> région</i> » ;</li>
-							<li><span lang="en">VoiceOver</span> n'annonce rien. Ne fonctionne pas au moment des tests.</li>
+							<li>NVDA annonce « <i>Date tableau éditable cadre de texte »</i>&nbsp;;</li>
+							<li><span lang="en">Jaws</span> annonce « <i>[Nom] date <span lang="en">picker</span> région</i> »&nbsp;;</li>
+							<li><span lang="en">VoiceOver</span> annonce <i>application x éléments</i>.</li>
 						</ul>
 					</li>
-					<li>La touche <kbd>HAUT</kbd> vous permet d’atteindre le même jour dans la semaine précédente ; </li>
-					<li>La touche <kbd>BAS</kbd> vous permet d’atteindre le même jour dans la semaine suivante ; </li>
-					<li>La touche <kbd>DROIT</kbd> vous permet d’atteindre le jour suivant ; </li>
-					<li>La touche <kbd>GAUCHE</kbd> vous permet d’atteindre le jour précédent ; </li>
-					<li>La touche <kbd>ESC</kbd> vous permet de fermer le calendrier s'il est ouvert dans une autre fenêtre ; </li>
+					<li>La touche <kbd>HAUT</kbd> vous permet d’atteindre le même jour dans la semaine précédente&nbsp;; </li>
+					<li>La touche <kbd>BAS</kbd> vous permet d’atteindre le même jour dans la semaine suivante&nbsp;; </li>
+					<li>La touche <kbd>DROIT</kbd> vous permet d’atteindre le jour suivant&nbsp;; </li>
+					<li>La touche <kbd>GAUCHE</kbd> vous permet d’atteindre le jour précédent&nbsp;; </li>
+					<li>La touche <kbd>ESC</kbd> vous permet de fermer le calendrier s'il est ouvert dans une autre fenêtre&nbsp;; </li>
 					<li>La touche <kbd>ENTRÉE</kbd> vous permet de valider la sélection en cours.</li>
 					<li>Autres interactions au clavier (à ne documenter que si elles sont implémentées)&nbsp;:
 						<ul>
-							<li><kbd>DÉBUT</kbd> sélectionne la première date du mois affiché ;</li>
-							<li><kbd>FIN</kbd>, sélectionne la dernière date du mois affiché ;</li>
-							<li><kbd>PAGE SUIVANTE</kbd>, passe au mois suivant ;</li>
-							<li><kbd>PAGE PRECEDENTE</kbd>, passe au mois précédent ;</li>
+							<li><kbd>DÉBUT</kbd> sélectionne la première date du mois affiché&nbsp;;</li>
+							<li><kbd>FIN</kbd>, sélectionne la dernière date du mois affiché&nbsp;;</li>
+							<li><kbd>PAGE SUIVANTE</kbd>, passe au mois suivant&nbsp;;</li>
+							<li><kbd>PAGE PRECEDENTE</kbd>, passe au mois précédent&nbsp;;</li>
 						</ul>
 					</li>
 				</ul>
@@ -209,12 +217,12 @@
 				<ul>
 					<li>Si vous utilisez un lecteur d’écran, lorsque vous atteignez un champ d’édition :
 						<ul>
-							<li>NVDA annonce « <i>Autocomplète fenêtre développée</i> » ;</li>
-							<li><span lang="en">Jaws</span> annonce « <i>Panneau d'onglet, autocomplète</i> » ; </li>
-							<li><span lang="en">VoiceOver</span> annonce « <i lang="en">X results are available, use up and down arrow keys to navigate</i> », annonce disponible seulement en anglais lors des tests, où X représente le nombre de résultats proposés en autocomplétion.</li>
+							<li>NVDA annonce « <i>éditable avec auto-complétion</i> »&nbsp;;</li>
+							<li><span lang="en">Jaws</span> annonce « <i>[Nom] édition tapez le texte.</i> »&nbsp;;</li>
+							<li><span lang="en">VoiceOver</span> n'implémente pas ce composant de façon satisfaisante. Il n'indique pas qu'une liste de proposition apparaît et qu'il faut en sélectionner une dans la liste.</li>
 						</ul>
 					</li>
-					<li>Les touches <kbd>HAUT</kbd> et <kbd>BAS</kbd> vous permettent de déplier la liste de choix et de naviguer dans les suggestions. À noter qu’à chaque fois que vous atteignez la fin de la liste des suggestions, vous retournez sur le champ de saisie ; </li>
+					<li>Les touches <kbd>HAUT</kbd> et <kbd>BAS</kbd> vous permettent de déplier la liste de choix et de naviguer dans les suggestions. À noter qu’à chaque fois que vous atteignez la fin de la liste des suggestions, vous retournez sur le champ de saisie.</li>
 					<li>La touche <kbd>ENTRÉE</kbd> vous permet de valider la suggestion sur laquelle vous êtes placés.</li>
 				</ul>
 			</section>
@@ -224,7 +232,7 @@
 		<footer>
 			<h2>Droits de reproduction</h2>
 			<div class="col-1-3">
-				<p>Ce document est placé sous <a href="http://wiki.data.gouv.fr/wiki/Licence_Ouverte_/_Open_Licence">licence ouverte 1.0 ou ultérieure</a>.</p>
+				<p>Ce document est placé sous <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence">licence ouverte 1.0 ou ultérieure</a>.</p>
 				<p class="clear">Vous êtes libres de :</p>
 				<ul>
 					<li>Reproduire, copier, publier et transmettre ces informations ;</li>
@@ -234,7 +242,7 @@
 				</ul>
 			</div>
 			<div class="col-2-3">
-				<p>Ces libertés s'appliquent sous réserve de mentionner la paternité de l’information d’origine : sa source et la date de sa dernière mise à jour. Le réutilisateur peut notamment s'acquitter de cette condition en indiquant un ou des liens hypertextes (URL) renvoyant vers le présent site et assurant une mention effective de sa paternité.</p><p>Cette mention de paternité ne doit ni conférer un caractère officiel à la réutilisation de ces informations, ni suggérer une quelconque reconnaissance ou caution par le producteur de l’information, ou par toute autre entité publique, du réutilisateur ou de sa réutilisation.</p>
+				<p>Ces libertés s'appliquent sous réserve de mentionner la paternité de l’information d’origine&nbsp;: sa source et la date de sa dernière mise à jour. Le réutilisateur peut notamment s'acquitter de cette condition en indiquant un ou des liens hypertextes (URL) renvoyant vers le présent site et assurant une mention effective de sa paternité.</p><p>Cette mention de paternité ne doit ni conférer un caractère officiel à la réutilisation de ces informations ni suggérer une quelconque reconnaissance ou caution par le producteur de l’information, ou par toute autre entité publique, du réutilisateur ou de sa réutilisation.</p>
 			</div>
 			<div class="col-3-3">
 				<img src="img/modernisation-logo.jpg" alt="Secrétariat général pour la modernisation de l’action publique" />
