@@ -12,9 +12,9 @@ Vous êtes tenu⋅e⋅s de publier un document, la déclaration de conformité, 
 
 Ces trois modèles peuvent être repris et adaptés en fonction du contexte de votre site ou application web :
 
--* [modèle de page d'aide](http://disic.github.io/rgaa_modeles_documents/aide.html) (fichier aide.html);
--* [modèle de déclaration de conformité](http://disic.github.io/rgaa_modeles_documents/declaration-de-conformite.html) (fichier declaration-de-conformite.html) ;
--* [modèle de notices d'utilisation de composants interactifs, à intégrer dans la page d'aide selon les besoins.](http://disic.github.io/rgaa_modeles_documents/composants.html) (fichier composants.html)
+* [modèle de page d'aide](http://disic.github.io/rgaa_modeles_documents/aide.html) (fichier aide.html);
+* [modèle de déclaration de conformité](http://disic.github.io/rgaa_modeles_documents/declaration-de-conformite.html) (fichier declaration-de-conformite.html) ;
+* [modèle de notices d'utilisation de composants interactifs, à intégrer dans la page d'aide selon les besoins.](http://disic.github.io/rgaa_modeles_documents/composants.html) (fichier composants.html)
 
 
 ## Kit d'audit : Modèles pour faire des audits RGAA 3
